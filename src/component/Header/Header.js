@@ -1,10 +1,16 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import '../css/style.css'
+import '../css/style.css';
 import './Header.css';
 
 function Header() {
+  const [menuActive, setMenuActive] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
   return (
     <>
       <header className='header-area'>
@@ -14,7 +20,7 @@ function Header() {
               <h1 className='logo-text'>K</h1>
             </a>
 
-            <nav className="navbar">
+            <nav className={`navbar ${menuActive ? 'active' : ''}`}>
               <ul className="menu">
                 <li className="active"><a href="index.html">خانه</a></li>
                 <li><a href="about.html">درباره من</a></li>
@@ -26,7 +32,7 @@ function Header() {
 
             <a href="contact.html" className="theme-btn">بیا حرف بزنیم</a>
 
-            <div className="show-menu">
+            <div className={`show-menu ${menuActive ? 'active' : ''}`} onClick={toggleMenu}>
               <span></span>
               <span></span>
               <span></span>

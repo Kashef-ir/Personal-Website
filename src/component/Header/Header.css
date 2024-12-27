@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'NovaCut';
-  src: url('../../assets/fonts/Nova_Cut/NovaCut-Regular.ttf') format('truetype');
+  font-family: "NovaCut";
+  src: url("../../assets/fonts/Nova_Cut/NovaCut-Regular.ttf") format("truetype");
 }
 
 /* Header */
 
-.header-area{
+.header-area {
   margin-top: 10px;
 }
 .header-area .logo {
@@ -33,7 +33,7 @@
 .header-area .navbar .menu li a {
   font-size: 16px;
   color: #676767;
-  transition: .3s;
+  transition: 0.3s;
   display: block;
   padding: 26px 0px;
 }
@@ -57,7 +57,7 @@
   height: 1px;
   background: #0f0f0f;
   display: block;
-  transition: .4s;
+  transition: 0.4s;
 }
 .header-area .show-menu.active span:first-child {
   transform: translate3d(0px, 6px, 0px) scale(1, 1) rotate(45deg) scale(1, 1);
@@ -72,10 +72,69 @@
   transform: scale(0);
 }
 
-
 .container {
   max-width: 1170px;
 }
 .gx-grow {
   gap: 80px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .header-area {
+    padding: 20px 0;
+  }
+
+  .header-area .navbar {
+    position: fixed;
+    width: 100%;
+    background: #fbfbfc;
+    z-index: 15;
+    overflow-x: hidden;
+    /* height: 80px; */
+    transform-origin: 50% 50% 0px;
+    top: 0;
+    left: 0;
+    padding-top: 100px;
+    padding-bottom: 24px;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    /* max-height: 0; */
+    will-change: transform;
+
+    /* transform: translate3d(0px, -11.4272px, 0px) scale(1, 1) scale(1, 0.945615); */
+    transform: translate3d(0px, -300px, 0px) scale(1, 1) scale(1, 0.945615);
+    transform: translate3d(0px, -300px, 0px) scale(1, 0.5) scale(1, 0.5);
+    transition: 0.5s;
+  }
+  .header-area .navbar.active {
+    opacity: 1;
+    visibility: visible;
+    /* height: min-content; */
+    transform: translate3d(0px, 0, 0px) scale(1, 1) scale(1, 1);
+    /* max-height: 90vh; */
+  }
+  .header-area .navbar .menu {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+  }
+  .header-area .navbar .menu li a {
+    padding: 0;
+  }
+  .header-area .navbar .theme-btn {
+    display: inline-block;
+    margin-top: 48px;
+  }
+  .header-area .gx-row > .theme-btn {
+    display: none;
+  }
+
+  .header-area .show-menu {
+    display: flex;
+  }
 }
