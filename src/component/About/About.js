@@ -168,10 +168,16 @@ function About() {
                     <img src={bg1Img} alt="BG" className="bg-img" />
                     <div className="inner-profile-icons shadow-box">
                       <a href="index.html#">
-                        <FaGithub size={35} />
+                        <FaGithub
+                          size={35}
+                          className="inner-profile-icons-icon"
+                        />
                       </a>
                       <a href="index.html#">
-                        <FaXTwitter size={35}/>
+                        <FaXTwitter
+                          size={35}
+                          className="inner-profile-icons-icon"
+                        />
                       </a>
                     </div>
                     <div className="d-flex align-items-center justify-content-between">

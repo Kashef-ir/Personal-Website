@@ -43,6 +43,11 @@
     ]
   },
   "devDependencies": {
-    "@types/bootstrap": "^5.2.10"
+    "@craco/craco": "^7.1.0",
+    "@fullhuman/postcss-purgecss": "^7.0.2",
+    "@types/bootstrap": "^5.2.10",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "postcss-loader": "^8.1.1"
   }
 }
