@@ -1,15 +1,12 @@
+<!-- src/components/VantaBackground.vue -->
 <template>
-  <div class="vanta-container">
-    <v-vanta :effect="effect" :options="options"></v-vanta>
-    <div class="content relative text-white">
-      <Navbar />
-    </div>
+  <div class="vanta-background">
+    <v-vanta :effect="effect" :options="options" />
   </div>
 </template>
 
 <script setup>
 import VVanta from "vue-vanta-revamp";
-import Navbar from "@/components/Navbar.vue";
 import { ref } from "vue";
 
 const effect = ref("topology");
@@ -27,19 +24,18 @@ const options = ref({
 </script>
 
 <style scoped>
-.vanta-container {
-  position: relative;
+.vanta-background {
+  position: fixed;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-}
-
-.vanta-container > canvas {
-  position: absolute;
   top: 0;
   left: 0;
+  z-index: -99;
+}
+
+.vanta-background canvas {
   width: 100%;
   height: 100%;
-  z-index: -99;
 }
 </style>
