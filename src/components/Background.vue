@@ -14,7 +14,7 @@ const options = ref({
   mouseControls: true,
   touchControls: true,
   gyroControls: false,
-  minHeight: 1500.0,
+  minHeight: 1300.0,
   minWidth: 200.0,
   scale: 1.0,
   scaleMobile: 1.0,

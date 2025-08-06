@@ -1,5 +1,6 @@
 <template>
-  <nav class="navbar">
+  <Transition appear @enter="animateIn">
+    <nav class="navbar">
     <div
       class="flex justify-between items-center py-8 px-5 text-gray-400 font-bold"
     >
@@ -104,4 +105,20 @@
       </div>
     </div>
   </nav>
+  </Transition>
 </template>
+
+<script setup>
+import { slideInTop } from 'animate4vue';
+import { Transition } from 'vue';
+
+const animateIn = (el, done) => {
+  el.style.visibility = 'hidden';
+  setTimeout(() => {
+    el.style.visibility = 'visible';
+    slideInTop(el, done, {
+      duration: 1
+    });
+  }, 1200);
+}
+</script>
