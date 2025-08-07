@@ -1,4 +1,3 @@
-<!-- src/components/VantaBackground.vue -->
 <template>
   <div class="vanta-background">
     <v-vanta :effect="effect" :options="options" />
@@ -9,7 +8,7 @@
 import VVanta from "vue-vanta-revamp";
 import { ref } from "vue";
 
-const effect = ref("topology");
+const effect = ref("waves");
 const options = ref({
   mouseControls: true,
   touchControls: true,
@@ -18,7 +17,7 @@ const options = ref({
   minWidth: 200.0,
   scale: 1.0,
   scaleMobile: 1.0,
-  color: 0x343434,
+  color: 0x111111,
   backgroundColor: 0xc0c0c,
 });
 </script>

@@ -37,49 +37,46 @@
           <br />
           <p class="text-md">
             Find me on: <br />
-            <div class="my-1">
+            <span class="my-1 block">
               <a
-              href="https://github.com/kashef-ir"
-              class="underline text-white p-0.5 rounded"
-              target="_blank"
-              ><font-awesome-icon :icon="['fab', 'github']" />Github</a
+                href="https://github.com/kashef-ir"
+                class="underline text-white p-0.5 rounded"
+                target="_blank"
+                ><font-awesome-icon :icon="['fab', 'github']" />Github</a
+              >
+              |
+              <a
+                href="https://x.com/kashefsaltane"
+                class="underline text-white p-0.5 rounded"
+                target="_blank"
+                ><font-awesome-icon :icon="['fab', 'x-twitter']" />Twitter</a
+              >
+              |
+              <a
+                href="https://www.linkedin.com/in/mohamad-hashemi-22962a227/"
+                class="underline text-white p-0.5 rounded"
+                target="_blank"
+                ><font-awesome-icon :icon="['fab', 'linkedin']" />Linkedin</a
+              >
+              |
+              <a
+                href="https://instagram.com/muhamadhashemi"
+                class="underline text-white p-0.5 rounded"
+                target="_blank"
+                ><font-awesome-icon :icon="['fab', 'instagram']" />Instagram</a
+              >
+              |
+              <a
+                href="https://instagram.com/muhamadhashemi"
+                class="underline text-white p-0.5 rounded"
+                target="_blank"
+                ><font-awesome-icon :icon="['fab', 'mastodon']" />Mastodon</a
+              >
+            </span>
+            Or mail me at
+            <span class="font-semibold text-white"
+              >muhamadhashemi142@gmail.com</span
             >
-            |
-            <a
-              href="https://x.com/kashefsaltane"
-              class="underline text-white p-0.5 rounded"
-              target="_blank"
-              ><font-awesome-icon :icon="['fab', 'x-twitter']" />X (Twitter)</a
-            >
-            |
-            <a
-              href="https://www.linkedin.com/in/mohamad-hashemi-22962a227/"
-              class="underline text-white p-0.5 rounded"
-              target="_blank"
-              ><font-awesome-icon
-                :icon="['fab', 'linkedin']"
-              />Linkedin</a
-            >
-            |
-            <a
-              href="https://instagram.com/muhamadhashemi"
-              class="underline text-white p-0.5 rounded"
-              target="_blank"
-              ><font-awesome-icon
-                :icon="['fab', 'instagram']"
-              />Instagram</a
-            > 
-            | 
-            <a
-              href="https://instagram.com/muhamadhashemi"
-              class="underline text-white p-0.5 rounded"
-              target="_blank"
-              ><font-awesome-icon
-                :icon="['fab', 'mastodon']"
-              />Mastodon</a
-            >
-            </div>
-            Or mail me at <span class="font-semibold text-white">muhamadhashemi142@gmail.com</span>
           </p>
         </div>
       </Transition>
@@ -88,7 +85,7 @@
 </template>
 
 <script setup>
-// import VantaBackground from "@/components/Background.vue";
+import VantaBackground from "@/components/Background.vue";
 import Navbar from "@/components/Navbar.vue";
 import { slideInBottom } from "animate4vue";
 import { Transition } from "vue";
