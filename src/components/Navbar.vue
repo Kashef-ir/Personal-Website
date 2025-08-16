@@ -18,21 +18,21 @@
             <font-awesome-icon :icon="['fas', 'house']" />
           </a>
         </li>
-        <li class="2xl:block xl:block lg:block md:hidden sm:hidden">
+        <li class="2xl:block xl:block lg:block md:hidden sm:hidden hidden">
           <a
             href="about"
             class="px-1 mx-1 transition-all duration-500 ease-in-out hover:text-white"
             >About</a
           >
         </li>
-        <li class="2xl:block xl:block lg:block md:hidden sm:hidden">
+        <li class="2xl:block xl:block lg:block md:hidden sm:hidden hidden">
           <a
             href="blog"
             class="px-1 mx-1 transition-all duration-500 ease-in-out hover:text-white"
             >Blog</a
           >
         </li>
-        <li class="2xl:block xl:block lg:block md:hidden sm:hidden">
+        <li class="2xl:block xl:block lg:block md:hidden sm:hidden hidden">
           <a
             href="/projects"
             class="px-1 mx-1 transition-all duration-500 ease-in-out hover:text-white"
