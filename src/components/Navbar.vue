@@ -27,7 +27,7 @@
         </li>
         <li class="2xl:block xl:block lg:block md:hidden sm:hidden hidden">
           <a
-            href="blog"
+            href="/blog"
             class="px-1 mx-1 transition-all duration-500 ease-in-out hover:text-white"
             >Blog</a
           >
