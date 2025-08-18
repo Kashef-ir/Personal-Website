@@ -9,12 +9,15 @@
         >
           <h1 class="font-bold text-3xl my-8">Mohammad Hashemi</h1>
           <p class="text-md">
-            Hey! I’m Mohammad Hashemi (also known as Kashef), a passionate open-source contributor, Front-End Developer and with a strong interest in web security.
+            Hey! I’m Mohammad Hashemi (also known as Kashef), a passionate
+            open-source contributor, Front-End Developer and with a strong
+            interest in web security.
           </p>
           <br />
           <p class="text-md">
             Dreaming up cool ideas and making them come true is where my passion
-            lies. I am enthusiastic about building tools that help myself and others become more productive and enjoy the process of building. You
+            lies. I am enthusiastic about building tools that help myself and
+            others become more productive and enjoy the process of building. You
             can find my
             <a class="text-white p-0.5 rounded bg-[#222222]" href="/projects"
               >full projects list here</a
@@ -27,11 +30,12 @@
           </p>
           <br />
           <p class="text-md">
-            I am based in <span class="font-semibold">Qom</span> and sometimes <span class="font-semibold">Tehran</span>. If you are around, please reach
-            out and let’s have some coffee or work together.
+            I am based in <span class="font-semibold">Qom</span> and sometimes
+            <span class="font-semibold">Tehran</span>. If you are around, please
+            reach out and let’s have some coffee or work together.
           </p>
           <br />
-          <hr class="h-px border-0 bg-gray-500">
+          <hr class="h-px border-0 bg-gray-500" />
           <br />
           <p class="text-md">
             Find me on: <br />

@@ -7,17 +7,17 @@
         <div
           class="my-12 2xl:mx-80 xl:mx-80 lg:mx-80 md:mx-24 sm:mx-10 mx-12 text-gray-300"
         >
-            <h1 class="text-3xl font-bold mb-4">Blogs</h1>
-            <ul class="space-y-2">
-              <li v-for="post in posts" :key="post.sys.id" class="list-disc">
-                <router-link
-                  :to="`/blog/${post.sys.id}`"
-                  class="text-gray-300 text-xl p-1 rounded bg-[#222222] hover:underline"
-                >
-                  {{ post.fields.title }}
-                </router-link>
-              </li>
-            </ul>
+          <h1 class="text-3xl font-bold mb-4">Blogs</h1>
+          <ul class="space-y-2">
+            <li v-for="post in posts" :key="post.sys.id" class="list-disc">
+              <router-link
+                :to="`/blog/${post.sys.id}`"
+                class="text-gray-300 text-xl p-1 rounded bg-[#222222] hover:underline"
+              >
+                {{ post.fields.title }}
+              </router-link>
+            </li>
+          </ul>
         </div>
       </Transition>
     </div>

@@ -45,7 +45,7 @@
                   ><font-awesome-icon :icon="['fas', 'globe']" /> Demo</a
                 >
               </div>
-              <hr class="h-px border-0 bg-gray-500">
+              <hr class="h-px border-0 bg-gray-500" />
             </li>
           </ul>
         </div>
