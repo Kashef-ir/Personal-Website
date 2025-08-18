@@ -5,10 +5,10 @@
       <Navbar />
       <Transition appear @enter="animateIn">
         <div
-          class="my-12 2xl:mx-80 xl:mx-80 lg:mx-80 md:mx-24 sm:mx-10 mx-12 text-gray-300"
+          class="my-12 2xl:mx-80 xl:mx-80 lg:mx-24 md:mx-24 sm:mx-10 mx-12 text-gray-300"
         >
           <h1 class="text-3xl font-bold mb-4">Blogs</h1>
-          <ul class="space-y-2">
+          <ul class="space-y-2" v-if="posts.length > 0">
             <li v-for="post in posts" :key="post.sys.id" class="list-disc">
               <router-link
                 :to="`/blog/${post.sys.id}`"
@@ -18,6 +18,7 @@
               </router-link>
             </li>
           </ul>
+          <span v-else>Nothing is here yet :)</span>
         </div>
       </Transition>
     </div>

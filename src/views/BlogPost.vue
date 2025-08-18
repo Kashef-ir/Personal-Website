@@ -5,7 +5,7 @@
       <Navbar />
       <Transition appear @enter="animateIn">
         <div
-          class="my-12 2xl:mx-80 xl:mx-80 lg:mx-80 md:mx-24 sm:mx-10 mx-12 text-gray-300"
+          class="my-12 2xl:mx-80 xl:mx-80 lg:mx-24 md:mx-24 sm:mx-10 mx-12 text-gray-300"
         >
           <div v-if="post">
             <h1 class="text-3xl font-bold mb-4">{{ post.fields.title }}</h1>
