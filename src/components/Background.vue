@@ -17,7 +17,7 @@ const options = ref({
   minWidth: 200.0,
   scale: 1.0,
   scaleMobile: 1.0,
-  color: 0x55555,
+  color: 0x555555,
   backgroundColor: 0x000000,
 });
 </script>
