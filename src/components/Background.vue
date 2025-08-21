@@ -8,7 +8,7 @@
 import VVanta from "vue-vanta-revamp";
 import { ref } from "vue";
 
-const effect = ref("waves");
+const effect = ref("topology");
 const options = ref({
   mouseControls: true,
   touchControls: true,
@@ -17,8 +17,8 @@ const options = ref({
   minWidth: 200.0,
   scale: 1.0,
   scaleMobile: 1.0,
-  color: 0x111111,
-  backgroundColor: 0xc0c0c,
+  color: 0x55555,
+  backgroundColor: 0x000000,
 });
 </script>
 
